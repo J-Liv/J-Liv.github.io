@@ -12,7 +12,7 @@ body {
 
 /* Container for the hero section with background image */
 .hero-section {
-  background-image: url('https://cdn2.dropmarkusercontent.com/52043/5938a755f792e37ab8cbc94c5d3230537eba586f1cbea8f54599567b83672682/4996_Ethiopia_2019_CG-.jpg?Expires=1751832834&Signature=K9DyKbXmbRI57x45VUR79xCqyW0Gm3G9VRAt0ZNjodBiHsYjlSQG1FSVi690tEzkw3SJL3QKRve50KJtp7G5OrYCwlWv7XPnA4H46IShqE1NctxACBVlAjWc4BTBASmrVcxlPypiFc-BNMRQ5ygh~MtULeabHJ7f0qX83Nmdq-4WB6icIJaXcNyeGiwXrgKP1zvaLJdGXR~-n9ZBz6RuZPr8KrRAsGhP8tmyWFEsNKr4xCRzyZ6v2P~wUC56gaYPbXPW-6mCW6h~afsAGRG939XKBLoviet1s3BxNnTXn29l0c8sH92KWTe7uzKHkpblJnCT8B7EzLzCirOjviFKnw__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+  background-image: url(https://cdn2.dropmarkusercontent.com/52043/5938a755f792e37ab8cbc94c5d3230537eba586f1cbea8f54599567b83672682/preview/4996_Ethiopia_2019_CG-.jpg?Expires=1751853545&Signature=KdCkC6S68UUxAtSt4jliWJkff-ykSHZcNxfeKBuWzfDiQZonyBAUYDVm6gvUJfHBsRN1ffT3lMQUgyditFMAJFYX9JjLDsZeddnpwrWzeCuQaDAscEu5UmrrqonZisf1OknKLEGJnlOznD2ATg3ArjCPWioHwoAySJ~p4KLiNiBtaFYLrPUi5s7PTFysaLhUT9XmmLoM5U-pUlJKHhmwzkSf1weztDTr2APUXNNlVUocMf2XoZcOnWDtnFFgUFp7Cctl8JNRnMbtteuJm8HP~agakHIKwuzvBhdvPkSh8vaNasUQH9zGXirKneq0fK~uHOpgWcVKBsFlzGTqUi9Ajw__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ);
   background-size: cover; /* Make the image cover the whole background */
   background-position: top center; /* Show more of the top of the image */
   background-repeat: no-repeat; /* Do not repeat the image */
