@@ -604,3 +604,24 @@ h1 {
     min-width: unset;
   }
 }
+
+/* Make sure all images are visible and not too small */
+img {
+  display: block;        /* Makes images appear on their own line */
+  max-width: 100%;       /* Prevents images from being too wide */
+  height: auto;          /* Keeps image proportions */
+}
+
+/* Optional: Give the logo a reasonable size */
+.header-logo {
+  width: 80px;           /* Adjust as needed */
+  height: auto;
+}
+
+/* Optional: Give Nia's Story image a reasonable size */
+.nia-story-image {
+  width: 300px;          /* Adjust as needed */
+  height: auto;
+  border-radius: 8px;    /* Rounded corners for a nice look */
+  border: 2px solid #ccc;/* Light border for visibility */
+}
