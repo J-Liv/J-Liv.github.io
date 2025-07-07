@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Charity: Water</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="hero-section">
+    <!-- Header with logo button, navigation links, and button on the right -->
+    <header class="site-header">
+      <button class="logo-btn">
+        <img class="header-logo" src="https://paytaxeslater.com/wp-content/uploads/2018/05/CharityWater.jpg" alt="Charity Water Logo">
+      </button>
+      <nav class="header-nav">
+        <a href="#our_story" class="header-link">Our Story</a>
+      </nav>
+      <button class="give-water-btn" id="header-donate-btn">Give Water Now</button>
+    </header>
+    <!-- Headline for the website -->
+    <div class="left-third">
+      <h1>Clean Water. Real Proof. Your Legacy.</h1>
+      <!-- Subheadline for the website -->
+      <p class="subheadline">Make a lasting impact with Total Transparency with every dollar. Bring clean water to communities and see what changes you make</p>
+    </div>
+  </div>
+  <!-- About Us section for scrolling, placed after main content -->
+  <div style="background: #fff; width: 100%; margin-top: 60px; padding: 40px 0;">
+    <section id="our_story" class="our-story-section">
+      <div class="our-story-flex">
+        <div class="our-story-text">
+          <h2>Our Story</h2>
+          <p>At Charity: Water, our mission is simple yet profound: Bring clean and safe water to every single person on the planet.</p>
+          <p>We are dedicated to bringing clean water to communities in need. Our mission is to provide total transparency and real proof of your impact.</p>
+          <p>Imagine a world where no one has to walk miles for dirty water, where preventable diseases from unsafe waters are a thing of the past, and where communities can thrive because they have access to life-giving hydration. This is the future we are building here at Charity: Water.</p>
+          <p>How do we do it? We fund sustainable water solutions in developing countries, as we work hand-in-hand with trusted local partners on the ground. These partners are experts in their regions, ensuring that every project is tailored to the community's unique needs and built to last.</p>
+          <p>Every dollar you give goes straight to the field, making a tangible impact on real lives. We cover our operating costs through separate groups of private donors, so you can be confident that your generosity is bringing clean water to those who need it most.</p>
+        </div>
+        <div class="nia-story-image-caption-group">
+          <div class="nia-story-image-container">
+            <img src="https://cdn2.dropmarkusercontent.com/52043/1871a76052c9d160ab83c581618b5d35a41280c580d8a869d4fe3009cf97b01f/preview/charity_water_Tanzania_TaraShupePhotography_0021.jpg?Expires=1751840744&Signature=GdnZl5vJNENbRNd8ahnYlpMYX-mfVq4LR8GguHTUga7aabXkydBj0lQsk96iPMrwvNz68vvQBeaS3I-aZ27lN8oiGbOeK6eanu3Cv9BNKMsAj8Zycvl3tB1RwOU25W5~GQREP-GP-LSZM5LhSco426dUwuRcF4R4nHui0sch6yrketyWq4DAJxeOoOPcZSYM1uSJxlRdjSM029pML2bdeuwVtdFu3mA-TqS~fp2Q8q4M-1Ps6L~31xtbGVshnAtt1bGDBNVJruQ0uMK6VsY9ZI~03oOpd2Q4D21IPwYz-YMDJPkNhCdnezyXWCiDtmwEyuZyRCyKTQqxM2hAEnXk4g__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ" alt="Nia's Story" class="nia-story-image">
+            <div class="nia-story-overlay">Nia's Story</div>
+          </div>
+          <div class="nia-story-caption">
+            Nia's village suffered from dirty water, causing sickness and missed school. Charity: Water drilled a new well, bringing clean, safe water. Now, Nia and her community are healthier, attend school, and have a bright future all thanks to clean water.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Donate Now section below Our Story -->
+  <section class="donate-section" id="donate">
+    <h2>Donate Now</h2>
+    <p>Your support brings clean water to those in need. Every donation makes a difference!</p>
+    <div class="donate-prices">
+      <button class="donate-price-btn" data-amount="5">$5</button>
+      <button class="donate-price-btn" data-amount="10">$10</button>
+      <button class="donate-price-btn" data-amount="20">$20</button>
+      <button class="donate-price-btn" data-amount="50">$50</button>
+    </div>
+    <button class="give-water-btn">Give Water Now</button>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-title">Contact Us:</div>
+      <div class="footer-details">
+        <div class="footer-phone">
+          <strong>Phone:</strong> +1 (646) 688-2323
+        </div>
+        <div class="footer-address">
+          <strong>Donation Processing Center</strong><br>
+          230 Franklin Rd. Ste. 11-II<br>
+          Franklin, TN 37064
+        </div>
+        <div class="footer-email">
+          <strong>Email:</strong> <a href="mailto:team@charitywater.org" class="footer-link">team@charitywater.org</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Highlight selected price button
+    const priceBtns = document.querySelectorAll('.donate-price-btn');
+    priceBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        priceBtns.forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+      });
+    });
+
+    // Scroll to donate section when header button is clicked
+    document.getElementById('header-donate-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('donate').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Scroll to Our Story section when header link is clicked
+    document.querySelector('.header-link[href="#our_story"]').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('our_story').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

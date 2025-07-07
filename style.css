@@ -1,0 +1,606 @@
+/*
+  Font stack: Use 'Proxima Nova' if available, otherwise use 'Montserrat', Arial, or the default sans-serif font.
+  Proxima Nova is a commercial font, so it may not appear unless installed on your computer.
+*/
+
+/* Set the background image for the whole website */
+body {
+  background-color: var(--light-blue); /* Set the background color to peach */
+  min-height: unset;
+  background: none;
+}
+
+/* Container for the hero section with background image */
+.hero-section {
+  background-image: url('https://cdn2.dropmarkusercontent.com/52043/5938a755f792e37ab8cbc94c5d3230537eba586f1cbea8f54599567b83672682/4996_Ethiopia_2019_CG-.jpg?Expires=1751832834&Signature=K9DyKbXmbRI57x45VUR79xCqyW0Gm3G9VRAt0ZNjodBiHsYjlSQG1FSVi690tEzkw3SJL3QKRve50KJtp7G5OrYCwlWv7XPnA4H46IShqE1NctxACBVlAjWc4BTBASmrVcxlPypiFc-BNMRQ5ygh~MtULeabHJ7f0qX83Nmdq-4WB6icIJaXcNyeGiwXrgKP1zvaLJdGXR~-n9ZBz6RuZPr8KrRAsGhP8tmyWFEsNKr4xCRzyZ6v2P~wUC56gaYPbXPW-6mCW6h~afsAGRG939XKBLoviet1s3BxNnTXn29l0c8sH92KWTe7uzKHkpblJnCT8B7EzLzCirOjviFKnw__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+  background-size: cover; /* Make the image cover the whole background */
+  background-position: top center; /* Show more of the top of the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  min-height: 100vh; /* Make sure background covers full height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Simple responsive navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--medium-green); /* Use palette color */
+  padding: 10px 20px;
+}
+
+.navbar-title {
+  color: var(--light-gray); /* Use palette color */
+  font-size: 18px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+}
+
+.navbar-link {
+  color: var(--light-gray); /* Use palette color */
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.navbar-link:hover {
+  background: var(--light-green);
+  color: var(--dark-green);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-link {
+    margin-top: 8px;
+  }
+}
+
+/* Color palette for the website:
+   Gold: #ffc907
+   Navy Blue: #003367
+   Light Blue: #77a8bb
+   Cream: #fff7e1
+   Black: #1a1a1a
+   Peach: #fed8c2
+   Brown: #c06c46
+   Gray: #cbccd1
+*/
+
+/* Set CSS variables for the color palette */
+:root {
+  --gold: #ffc907; /* Gold color */
+  --navy-blue: #003367; /* Navy Blue color */
+  --light-blue: #77a8bb; /* Light Blue color */
+  --cream: #fff7e1; /* Cream color */
+  --black: #1a1a1a; /* Black color */
+  --peach: #fed8c2; /* Peach color */
+  --brown: #c06c46; /* Brown color */
+  --gray: #cbccd1; /* Gray color */
+}
+
+/* Container for left-side text (now left third) */
+.left-third {
+  width: 33.33%; /* Only take up one third of the screen */
+  min-width: 200px; /* Make sure it doesn't get too small on small screens */
+  padding: 40px 0 0 30px; /* Add space from the top and left */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+@media (max-width: 1100px) {
+  .left-third {
+    width: 50%;
+    padding: 30px 0 0 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .left-third {
+    width: 100%; /* On small screens, use full width */
+    padding: 20px 10px 0 10px;
+  }
+}
+
+/* Style for h1: Proxima Nova, left aligned, font size 50px, cream color */
+h1 {
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  text-align: left; /* Align headline to the left */
+  font-size: 55px; /* Make the headline large */
+  color: var(--cream); /* Headline is now cream */
+  margin-left: 30px; /* Add some space from the left edge */
+  background: rgba(0,0,0,0.5); /* Add semi-transparent black shading */
+  padding: 16px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 40px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 28px;
+    margin-left: 10px;
+    padding: 8px 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 18px;
+    margin-left: 4px;
+    padding: 4px 4px;
+  }
+}
+
+/* Style for subheadline: Proxima Nova, left aligned, font size 15px, cream color */
+.subheadline {
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  text-align: left; /* Align subheadline to the left */
+  font-size: 15px; /* Make the subheadline medium size */
+  color: var(--cream); /* Set subheadline color to black */
+  margin-top: 10px;
+  margin-left: 30px; /* Add some space from the left edge */
+  background: rgba(0,0,0,0.5); /* Add semi-transparent black shading */
+  padding: 16px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  .subheadline {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .subheadline {
+    font-size: 11px;
+    margin-left: 10px;
+    padding: 8px 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .subheadline {
+    font-size: 9px;
+    margin-left: 4px;
+    padding: 4px 4px;
+  }
+}
+
+/* Header styles with logo on the left and button on the right */
+.site-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically center all header content */
+  justify-content: space-between; /* Logo left, button right */
+  padding: 0 30px; /* Remove top padding for true vertical centering */
+  min-height: 100px; /* Make header a bit taller for vertical centering */
+  box-sizing: border-box;
+  background: #000; /* Semi-transparent black shading */
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  gap: 20px; /* Space between logo and button */
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25); /* Add shading behind header */
+}
+
+@media (max-width: 1100px) {
+  .header-logo {
+    width: 44px;
+    height: 44px;
+  }
+  .logo-btn {
+    width: 56px;
+    height: 56px;
+  }
+  .give-water-btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+  .header-link {
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: unset;
+    padding: 10px 10px 0 10px;
+    gap: 10px;
+  }
+  .header-nav {
+    justify-content: center;
+    gap: 12px;
+    margin: 10px 0;
+  }
+  .logo-btn {
+    margin: 0 auto 10px auto;
+  }
+  .give-water-btn {
+    margin: 0 auto 10px auto;
+    width: 100%;
+  }
+  .left-third {
+    width: 100%;
+    padding: 16px 6px 0 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-logo {
+    width: 32px;
+    height: 32px;
+  }
+  .logo-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+  }
+  .give-water-btn {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  .header-link {
+    font-size: 12px;
+    padding: 3px 4px;
+  }
+}
+
+.logo-btn {
+  width: 70px;
+  height: 70px;
+  background: #000; /* Black background */
+  border: 2px solid var(--cream); /* Cream border restored */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif; /* Unify font */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo-btn:hover {
+  background: #000;
+  border-color: var(--gold); /* Gold border on hover */
+}
+
+.header-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.give-water-btn {
+  background-color: var(--navy-blue); /* Navy blue background */
+  color: var(--cream);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.give-water-btn:hover,
+.give-water-btn.selected {
+  background-color: var(--cream); /* Cream on hover */
+  color: var(--black);
+}
+
+/* Navigation link styles */
+.header-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  height: 100%;
+}
+
+.header-link {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-link:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+/* Our Story section styles */
+.our-story-section {
+  background-color: var(--light-blue); /* Light blue background */
+  border-radius: 16px; /* Rounded corners for a friendly look */
+  padding: 40px 30px; /* Add space inside the box */
+  margin: 40px auto; /* Space above and below, center horizontally */
+  max-width: 80%; /* Limit width for readability */
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08); /* Soft shadow for depth */
+}
+
+.our-story-section h2,
+.our-story-section p {
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif; /* Use the correct font */
+  color: var(--black); /* Use black for good contrast */
+}
+
+.our-story-section h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.our-story-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .our-story-section {
+    padding: 20px 10px;
+    margin: 24px 4px;
+  }
+  .our-story-section h2 {
+    font-size: 22px;
+  }
+  .our-story-section p {
+    font-size: 14px;
+  }
+}
+
+/* Our Story section layout */
+.our-story-flex {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.our-story-text {
+  flex: 1 1 0;
+  min-width: 220px;
+}
+
+.nia-story-image-container {
+  position: relative;
+  flex: 1 1 0;
+  max-width: 320px;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nia-story-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  display: block;
+}
+
+.nia-story-overlay {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--cream);
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  pointer-events: none;
+}
+
+.nia-story-image-caption-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  max-width: 340px;
+  min-width: 180px;
+}
+
+.nia-story-caption {
+  margin-top: 18px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-size: 17px;
+  color: var(--black);
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  padding: 14px 10px 10px 10px;
+  max-width: 320px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 900px) {
+  .our-story-flex {
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .nia-story-image-container {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .nia-story-image-caption-group {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .nia-story-caption {
+    max-width: 100%;
+  }
+}
+
+/* Donate Now section styles */
+.donate-section {
+  background: var(--gold);
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 40px auto 60px auto;
+  padding: 36px 24px;
+  text-align: center;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+}
+
+.donate-section h2 {
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  color: var(--black);
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.donate-section p {
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  color: var(--black);
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+  .donate-section {
+    max-width: 95%;
+    padding: 18px 6px;
+  }
+  .donate-section h2 {
+    font-size: 22px;
+  }
+  .donate-section p {
+    font-size: 14px;
+  }
+}
+
+/* Donate Now price buttons */
+.donate-prices {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.donate-price-btn {
+  background: var(--navy-blue);
+  color: var(--cream);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.donate-price-btn.selected,
+.donate-price-btn:active {
+  background: var(--cream);
+  color: var(--black);
+}
+
+.donate-price-btn:hover {
+  background: var(--light-blue);
+  color: var(--black);
+}
+
+/* Footer styles */
+.site-footer {
+  background: var(--navy-blue);
+  color: var(--cream);
+  padding: 36px 0 24px 0;
+  width: 100%;
+  margin-top: 60px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.08);
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-phone, .footer-address, .footer-email {
+  font-size: 16px;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  line-height: 1.7;
+  min-width: 180px;
+  text-align: left;
+}
+
+.footer-link {
+  color: var(--gold);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+@media (max-width: 700px) {
+  .footer-details {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .footer-phone, .footer-address, .footer-email {
+    text-align: center;
+    min-width: unset;
+  }
+}
